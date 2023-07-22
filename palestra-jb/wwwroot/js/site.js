@@ -1,4 +1,11 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿function colunaAzul() {
+    document.getElementById("coluna-azul").style.backgroundColor = "blue";
+}
 
-// Write your JavaScript code.
+function colunaVermelha() {
+    document.getElementById("coluna-vermelha").style.backgroundColor = "green";
+}
+
+function colunaAmarela() {
+    document.getElementById("coluna-amarela").style.backgroundColor = "yellow";
+}
