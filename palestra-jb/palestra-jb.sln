@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32811.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "palestra-jb", "palestra-jb.csproj", "{202BC8B9-5078-435D-9C86-166B78C54A17}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{202BC8B9-5078-435D-9C86-166B78C54A17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{202BC8B9-5078-435D-9C86-166B78C54A17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{202BC8B9-5078-435D-9C86-166B78C54A17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{202BC8B9-5078-435D-9C86-166B78C54A17}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5ECB97F5-3367-4A26-A6B5-BBA1C26EDD51}
+	EndGlobalSection
+EndGlobal
