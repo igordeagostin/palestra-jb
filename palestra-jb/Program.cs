@@ -20,6 +20,16 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+app.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(builder =>
+    {
+        builder.WithOrigins("http://example.com") // Substitua pela origem do seu cliente (frontend)
+               .AllowAnyMethod()
+               .AllowAnyHeader();
+    });
+});
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
