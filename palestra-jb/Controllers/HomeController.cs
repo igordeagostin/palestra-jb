@@ -28,5 +28,11 @@ namespace palestra_jb.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        public async Task<string> Sortear()
+        {
+            HttpClient httpClient = new HttpClient();
+            return await httpClient.GetStringAsync("https://localhost:7031/joaobley/sortear");
+        }
     }
 }

@@ -3,6 +3,16 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(builder =>
+    {
+        builder.WithOrigins("https://localhost:7031") // Substitua pela origem do seu cliente (frontend)
+               .AllowAnyMethod()
+               .AllowAnyHeader();
+    });
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -20,15 +30,7 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-app.Services.AddCors(options =>
-{
-    options.AddDefaultPolicy(builder =>
-    {
-        builder.WithOrigins("http://example.com") // Substitua pela origem do seu cliente (frontend)
-               .AllowAnyMethod()
-               .AllowAnyHeader();
-    });
-});
+
 
 app.MapControllerRoute(
     name: "default",
