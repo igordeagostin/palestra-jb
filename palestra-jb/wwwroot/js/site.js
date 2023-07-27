@@ -3,7 +3,11 @@
 }
 
 function colunaVermelha() {
-    document.getElementById("coluna-vermelha").style.backgroundColor = "green";
+    document.getElementById("coluna-vermelha").style.backgroundColor = "red";
+}
+
+function colunaAmarela() {
+    document.getElementById("coluna-amarela").style.backgroundColor = "yellow";
 }
 
 //async function sortear() {
