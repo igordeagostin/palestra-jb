@@ -18,21 +18,24 @@ public class JoaoBleyController : ControllerBase
     [HttpGet("Sortear")]
     public IActionResult Sortear()
     {
-        List<string> alunos = new()
+        List<string> cores = new()
         {
-            "Igor",
-            "Penha",
-            "Jesus",
-            "Henrique",
-            "Camila",
+            "Verde",
+            "Amarelo",
+            "Azul",
+            "Vermelho",
+            "Rosa",
+            "Preto",
+            "Branco",
+            "Roxo",
         };
 
-        return Ok(SortearStrings(alunos).FirstOrDefault());
+        return Ok(SortearStrings(cores).FirstOrDefault());
     }
 
     static List<string> SortearStrings(List<string> lista)
     {
-        Random random = new Random();
+        Random random = new();
         List<string> listaSorteada = lista.OrderBy(x => random.Next()).ToList();
         return listaSorteada;
     }
